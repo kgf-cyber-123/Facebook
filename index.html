@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FB Locked Profile Downloader - Kalyan King</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main class="main-wrapper">
+        <section class="card-container">
+            <!-- Header Section -->
+            <header class="card-header">
+                <div class="icon-box">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <h1>FB Locked Profile Downloader</h1>
+                <p class="subtitle">লক করা ফেসবুক প্রোফাইলের ছবি সহজে ডাউনলোড করুন</p>
+            </header>
+
+            <!-- Form / Input Section -->
+            <form id="downloaderForm" onsubmit="handleFormSubmit(event)">
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-link input-icon"></i>
+                    <input 
+                        type="url" 
+                        id="profileUrl" 
+                        placeholder="https://www.facebook.com/username" 
+                        required
+                        autocomplete="off">
+                </div>
+                <button type="submit" class="btn-primary" id="submitBtn">
+                    <i class="fa-solid fa-bolt"></i> Extract Profile Picture
+                </button>
+            </form>
+
+            <!-- Loading Spinner -->
+            <div class="loader-box" id="loader">
+                <div class="spinner"></div>
+                <p>ছবি প্রসেস করা হচ্ছে, কিছুক্ষণ অপেক্ষা করুন...</p>
+            </div>
+
+            <!-- Output / Result Section -->
+            <div class="result-box" id="resultBox">
+                <div class="image-preview">
+                    <img id="profileImage" src="" alt="Facebook Profile Picture">
+                </div>
+                <div class="action-buttons">
+                    <a id="downloadBtn" class="btn-download" href="#" target="_blank">
+                        <i class="fa-solid fa-download"></i> Save to Phone / SD Card
+                    </a>
+                </div>
+            </div>
+
+            <!-- Telegram Channel Link -->
+            <div class="telegram-section">
+                <a href="https://t.me/+d7CCU3-xSXg1ZWZl" target="_blank" class="btn-telegram">
+                    <i class="fa-brands fa-telegram"></i> Join Our Telegram Channel
+                </a>
+            </div>
+
+            <!-- Footer Section -->
+            <footer class="card-footer">
+                <p>Developer by :- <span class="dev-name">Kalyan king</span></p>
+            </footer>
+        </section>
+    </main>
+
+    <!-- Custom External JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
